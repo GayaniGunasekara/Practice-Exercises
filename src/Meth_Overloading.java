@@ -9,7 +9,7 @@ public class Meth_Overloading {
     public void meth(double y){
         System.out.println("Method3");
     }
-    public void meth(int x, int y){
+    public void meth(int x, double y){
         System.out.println("Method4");
     }
 
@@ -18,4 +18,4 @@ public class Meth_Overloading {
         obj.meth();
         obj.meth(4);
         obj.meth(3.4);
-        obj.meth(4,6);}}
+        obj.meth(4,6.4);}}

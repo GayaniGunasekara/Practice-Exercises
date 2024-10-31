@@ -1,10 +1,26 @@
+import java.awt.*;
+
 class Person {
+
+
+    Person(String city){
+        System.out.println("city is " +city);
+    }
     String name = "person001";
     void sound(){
         System.out.println("person speeks");
     }
 }
+
+
 class Student extends Person{
+
+
+    Student() {
+        super("Colombo");
+    }
+
+
     String name = "student001";
 
     void Askname(){
