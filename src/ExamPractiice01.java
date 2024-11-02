@@ -4,6 +4,9 @@ public class ExamPractiice01 {
 
     public static void main(String[] args) {
 
+
+
+
         Scanner input1 = new Scanner(System.in);
 
         System.out.println("Enter First Number: ");
