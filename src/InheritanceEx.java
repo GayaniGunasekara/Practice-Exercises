@@ -19,6 +19,7 @@ public static class InheritanceEx {
         d1.eat();
         d1.bread="Golden";
         d1.age =12;
+
         System.out.println(d1.bread);
         System.out.println(d1.age);
     }}}

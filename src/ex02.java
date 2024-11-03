@@ -1,51 +1,50 @@
-public class ex02 {
+abstract class Figure{
+    double dim1 ;
+    double dim2 ;
+   Figure(double dim1,double dim2){
+        this.dim1 = dim1;
+        this.dim2 = dim2;
+    }
+    abstract double area();
+}
 
-    double num1;
-    double num2;
+class Rectangle extends Figure{
+    Rectangle(double dim1, double dim2){
+        super(dim1,dim2);
+    }
+    double area(){
+        System.out.println("Area for rectangle: ");
+        return dim1*dim2;
+    }
+}
 
 
-    public ex02(double num1, double num2){
-        this.num1 = num1;
-        this.num2 = num2;
+class Triangle extends Figure{
+    Triangle(double dim1,double dim2){
+        super(dim1,dim2);
     }
 
-
-
-
-    public double add(){
-        return num1+num2;
+    @Override
+    double area() {
+        System.out.println("Area of the triangle");
+        return (dim1*dim2)/2;
     }
+}
 
-    public double div(){
-        return num1/num2;
+
+class ex02{
+    public static void main(String[] args) {
+
+
+
+
+        Triangle t1 = new Triangle(21.33,34.23);
+        Figure t2 = new Rectangle(33,25);
+        Triangle t3 = new Triangle(43.33,45.33);
+
+        t1.area();
+        t2.area();
+        t3.area();
     }
-
-
-
-
-
-public static void main (String[]args){
-
-        ex02 obj01 = new ex02(40,30);
-
-        double addition1 = obj01.add();
-        double divition1 = obj01.div();
-
-        System.out.println("The addition of two numbers in first object:" + addition1);
-        System.out.println("The divition of two numbers in first object:" + divition1);
-
-
-
-
-
-        ex02 obj02 = new ex02(100,20);
-
-        double addition2 = obj02.add();
-        double divition2 = obj02.div();
-
-        System.out.println("The addition of two numbers in second object:" + addition2);
-        System.out.println("The divition of two numbers in second object:" + divition2);
-
-}}
-
+}
 

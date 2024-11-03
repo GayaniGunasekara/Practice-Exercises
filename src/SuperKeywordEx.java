@@ -15,16 +15,15 @@ class Person {
 
 class Student extends Person{
 
-
     Student() {
         super("Colombo");
     }
-
 
     String name = "student001";
 
     void Askname(){
         System.out.println(name);
+
         System.out.println(super.name);
     }
     void sound(){
@@ -37,8 +36,10 @@ class Student extends Person{
      public static void main(String[] args) {
           Student s1 = new Student();
           s1.Askname();
+          s1.sound();
 
           Student s2 = new Student();
           s2.sound();
+          
      }
      }
